@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="top">
+		<view class="search">
+			<view class="dingwei" catchtap="dingwei">
+				<image src="./../icon/dingwei.png"></image>
+			</view>
+			<view class="search_left">{{location}}</view>
+			<view class="search_right" catchtap="routing_search">
+				<image src="./../icon/search.png"></image><text>搜索食品</text>
+			</view>
+		</view>
+		<view class="news" catchtap="routing_news">
+			<image src="./../icon/news.png"></image><text>1</text>
+		</view>
+	</view>
+	<view class="swiper_banner">
+		<swiper indicator-dots="true" autoplay="true"> 
+			<block wx:for="{{Carousel}}" wx:key="*this">
+				<swiper-item>
+					<view class="swiper_image">
+						<image src="./../images/banner{{item}}.png"></image>
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+  <view class="swiper_sort">
+		<swiper indicator-dots="true" bindchange="sort_swiper">
+			<block wx:for="{{Carousel}}" wx:key="*this">
+				<swiper-item>
+					<block>
+            <view class="sort" catchtap="sort" data-title="{{}}"><image src="./../images/sort1.png"></image>蔬菜</view>
+            <view class="sort" catchtap="sort"><image src="./../images/sort3.png"></image>海鲜水产</view>
+            <view class="sort" catchtap="sort"><image src="./../images/sort2.png"></image>酒水饮料</view>
+            <view class="sort" catchtap="sort"><image src="./../images/sort4.png"></image>食盐酱醋</view>
+            <view class="sort" catchtap="sort"><image src="./../images/sort3.png"></image>个护清洁</view>
+            <view class="sort" catchtap="sort"><image src="./../images/sort1.png"></image>水果</view>
+            <view class="sort" catchtap="sort"><image src="./../images/sort2.png"></image>休闲零食</view>
+            <view class="sort" catchtap="sort"><image src="./../images/sort4.png"></image>牛奶面包</view>
+            <view class="sort" catchtap="sort"><image src="./../images/sort3.png"></image>熟食冻品</view>
+            <view class="sort" catchtap="sort"><image src="./../images/sort1.png"></image>肉类</view>
+          </block>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+</view>
