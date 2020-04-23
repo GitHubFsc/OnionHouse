@@ -10,7 +10,9 @@ Page({
   data: {
     location : "长峰中心",
     Carousel :[1,2,3],
-    current : 1
+    current : 1,
+    recommend :["推荐商品","新鲜蔬菜","甜蜜瓜果","家禽肉类"],
+    currentTab : 0
   },
   onLoad: function (options) {
   },
@@ -36,9 +38,27 @@ Page({
   router_panicBuying(){
     console.log("立即抢购")
   },
+
   router_rushToBuy(){
     console.log("整点抢购")
   },
+  router_buyTogether(){
+    console.log("更多拼购")
+  },
+  router_patbuy(){
+    console.log("拍拍购")
+  },
+  router_merchant(e){
+    console.log("推荐商家")
+  },
+  router_recommendedBusiness(){
+    console.log("更多商家")
+  },
+
+
+
+
+
   /*点击事件绑定*/
   dingwei() {
     console.log("点击定位")
@@ -52,6 +72,13 @@ Page({
   addCart(e){
     console.log(e)
   },
+  nav_tab(e){
+    this.setData({
+      currentTab : e.target.dataset.index
+    })
+  },
+
+
   onShow: function () {
     // 页面出现在前台时执行
   },

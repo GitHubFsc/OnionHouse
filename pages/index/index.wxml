@@ -114,7 +114,7 @@
 		<view class="parityMarket_top">
 			<view class="pt_left">平价菜场</view>
 			<view class="pt_txt">每日精选·天天低价</view>
-			<view class="pt_right" catchtap="router_panicBuying">立即抢购 <image src="./../icon/gengduoW.png"></image>
+			<view class="pt_right" catchtap="router_panicBuying">立即抢购 <image class="gengduo" src="./../icon/gengduoW.png"></image>
 			</view>
 		</view>
 		<view class="parityMarket_bot">
@@ -134,7 +134,7 @@
 		<view class="buyTogether_top">
 			<view class="bt_left">拼购</view>
 			<view class="bt_txt">人多购买价格更优惠</view>
-			<view class="bt_right" catchtap="router_buyTogether">更多 <image src="./../icon/gengduoZ.png"></image>
+			<view class="bt_right" catchtap="router_buyTogether">更多 <image class="gengduo" src="./../icon/gengduoZ.png"></image>
 			</view>
 		</view>
 		<view class="buyTogether_bot">
@@ -153,12 +153,12 @@
 		</view>
 	</view>
 	<view class="hr"></view>
-	<!--Rush to buy  整点抢购-->
+	<!-- 整点抢购-->
 	<view class="rushToBuy">
 		<view class="rushToBuy_top">
 			<view class="rtb_title">整点抢购</view>
 			<view class="rtb_time"><text>10</text> : <text>10</text> : <text>10</text></view>
-			<view class="rtb_right" catchtap="router_rushToBuy">更多 <image src="./../icon/gengduo.png"></image>
+			<view class="rtb_right" catchtap="router_rushToBuy">更多 <image class="gengduo" src="./../icon/gengduo.png"></image>
 			</view>
 		</view>
 		<view class="rushToBuy_bot">
@@ -181,4 +181,117 @@
 		</view>
 	</view>
 	<view class="hr"></view>
+	<!-- 拍拍购 -->
+	<view class="patbuy">
+		<image class="patbuy_bgimg" src="./../images/ppgbg.png"></image>
+		<view class="patbuy_content">
+			<view class="patbuy_left">
+				<view class="patbuy_left_one">拍拍购</view>
+				<view class="patbuy_left_two"> 拍到你想要到</view>
+				<view class="patbuy_left_hr"></view>
+				<view class="patbuy_left_three" catchtap="router_patbuy">GO
+					<image class="gengduo" src="./../icon/gengduoH.png" />
+				</view>
+			</view>
+			<view class="patbuy_right">
+				<block wx:for="{{3}}" wx:key="*this">
+					<view data-id="" catchtap="">
+						<view class="patbuy_commodity">
+							<image src="./../images/nncm.png"></image>
+						</view>
+						<view class="patbuy_name">奶油草莓</view>
+						<view class="patbuy_price">￥18.6</view>
+					</view>
+				</block>
+			</view>
+		</view>
+	</view>
+	<view class="hr"></view>
+	<!-- 推荐商家 -->
+	<view class="recommendedBusiness">
+		<view class="recommendedBusiness_top">
+			<view class="rtb_title">推荐商家</view>
+			<view class="rtb_right" catchtap="router_recommendedBusiness">更多 <image class="gengduo" src="./../icon/gengduo.png"></image>
+			</view>
+		</view>
+		<view class="rb_bot">
+			<swiper display-multiple-items="2.5">
+				<block wx:for="{{6}}" wx:key="*this">
+					<swiper-item>
+						<view class="merchant" catchtap="router_merchant">
+							<view class="merchant_top">
+								<image src="./../images/tjsj-01.png"></image>
+							</view>
+							<view class="merchant_up">
+								<image src="./../images/merchant.png"></image>
+							</view>
+							<view class="merchant_bot">上好佳水果店</view>
+						</view>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+	</view>
+	<view class="hr"></view>
+	<!-- nav_tab 推荐商品 -->
+	<view class="tree_detail">
+		<view class="nav_tabs">
+			<block wx:for="{{recommend}}" wx:key="*this">
+				<view class="nav_tab {{index==currentTab?'active':''}}" data-index="{{index}}" catchtap="nav_tab">{{item}}
+					<view wx:if="{{index==currentTab}}" class="nav_tabs_hr"></view>
+				</view>
+			</block>
+		</view>
+		<view class="tab_ctn">
+			<block wx:for="{{recommend}}" wx:key="*this">
+				<view class="tab_ctn_img" wx:if="{{index==currentTab}}">
+					<image src="./../images/banner-sm.png"></image>
+				</view>
+				<view class="tab_ctn_view" wx:if="{{index==currentTab}}">
+					<block wx:for="{{4}}" wx:key="*this">
+						<block wx:if="{{index == 1}}">
+							<view class="list">
+								<image class="list_bgimg" src="./../images/List.png"></image>
+								<view class="list_title">24小时热卖榜单</view>
+								<view class="list_short">卖的特别好</view>
+								<view class="list_contents">
+									<block wx:for="{{3}}" wx:key="*this">
+										<view class="list_content">
+											<view class="lc_left">
+												<view class="lc_left_num lc_left_{{index+1}}">{{index+1}}</view>
+												<view class="lc_left_img">
+													<image src="./../images/fruit.png"></image>
+												</view>
+											</view>
+											<view class="lc_right">
+												<view class="lc_right_top">¥18.9</view>
+												<view class="lc_right_bot">日售2000</view>
+											</view>
+										</view>
+									</block>
+								</view>
+							</view>
+						</block>
+						<block wx:else>
+							<view class="fruit">
+								<block wx:if="{{index == 0}}"><view class="restocking"><view>补货中</view></view></block>
+								<view class="fruit_cz">
+									<image src="./../images/cz.png"></image>
+									<text>超值</text>
+								</view>
+								<view class="fruit_img">
+									<image src="./../images/fruit.png" />
+								</view>
+								<view class="fruit_name">中华水蜜桃之乡</view>
+								<view class="fruit_short">中华蜜桃之乡，龙泉特产</view>
+								<view class="fruit_price"><text>￥18.6</text>
+									<image data-id="" src="./../icon/cart.png" catchtap="addCart"></image>
+								</view>
+							</view>
+						</block>
+					</block>
+				</view>
+			</block>
+		</view>
+	</view>
 </view>

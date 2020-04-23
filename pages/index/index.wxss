@@ -11,6 +11,11 @@
   margin: 28rpx 0;
 }
 
+.gengduo {
+  width: 14rpx;
+  height: 26rpx;
+}
+
 .top {
   width: 100%;
   height: auto;
@@ -228,7 +233,7 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 .featuredArea .area .area_one {
-  width: 49.7%;
+  width: 49.2%;
   height: 50%;
   border: 0.5rpx solid rgba(229, 229, 229, 1);
   border-top-left-radius: 20rpx;
@@ -251,7 +256,7 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 .featuredArea .area .area_two {
-  width: 49.7%;
+  width: 49.2%;
   height: 50%;
   border: 0.5rpx solid rgba(229, 229, 229, 1);
   border-top-right-radius: 20rpx;
@@ -265,7 +270,7 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 .featuredArea .area .area_three {
-  width: 49.7%;
+  width: 49.2%;
   height: 50%;
   border: 0.5rpx solid rgba(229, 229, 229, 1);
   border-bottom-left-radius: 20rpx;
@@ -281,7 +286,7 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 .featuredArea .area .area_four {
-  width: 49.7%;
+  width: 49.2%;
   height: 50%;
   border: 0.5rpx solid rgba(229, 229, 229, 1);
   border-bottom-right-radius: 20rpx;
@@ -295,9 +300,14 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 .featuredArea .area .area_four .area_four_one {
-  width: 49.7%;
+  width: 49.8%;
   height: 100%;
   border-right: 0.5rpx solid rgba(229, 229, 229, 1);
+}
+.featuredArea .area .area_four .area_four_two {
+  width: 49.8%;
+  height: 100%;
+  border-bottom-right-radius: 20rpx;
 }
 
 /* 平价菜场 */
@@ -348,10 +358,6 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
   margin-top: 14rpx;
 }
 
-.parityMarket_top .pt_right image {
-  width: 14rpx;
-  height: 24rpx;
-}
 
 .parityMarket .parityMarket_bot {
   width: 690rpx;
@@ -456,11 +462,6 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
 
 }
 
-.buyTogether .bt_right image {
-  width: 14rpx;
-  height: 24rpx;
-}
-
 .buyTogether .buyTogether_bot {
   width: 670rpx;
   height: 380rpx;
@@ -518,28 +519,33 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
   left: 119rpx;
 
 }
+
 /* 整点抢购 */
-.rushToBuy{
+.rushToBuy,
+.recommendedBusiness {
   width: 100%;
   height: auto;
   padding: 0 20rpx;
 }
-.rushToBuy_top{
+
+.rushToBuy_top,
+.recommendedBusiness_top {
   width: 710rpx;
   height: 93rpx;
   display: flex;
   justify-content: space-between;
 }
-.rushToBuy_top .rtb_title {
+
+.rtb_title {
   width: 166rpx;
   height: 33rpx;
   font-size: 34rpx;
   line-height: 33rpx;
-  font-family:PingFang SC;
-  font-weight:600;
+  font-family: PingFang SC;
+  font-weight: 600;
 }
 
-.rushToBuy_top .rtb_title::before {
+.rtb_title::before {
   content: "";
   display: inline-block;
   width: 10rpx;
@@ -547,21 +553,20 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
   background: rgba(101, 193, 121, 1);
   margin-right: 20rpx;
 }
-.rushToBuy_top .rtb_time{
+
+.rushToBuy_top .rtb_time {
   width: 400rpx;
   height: 40rpx;
   line-height: 40rpx;
 }
-.rushToBuy_top .rtb_right{
+
+.rtb_right {
   width: 100rpx;
   height: 28rpx;
-  color:rgba(153,153,153,1);
+  color: rgba(153, 153, 153, 1);
 }
-.rushToBuy_top .rtb_right image{
-  width: 14rpx;
-  height: 26rpx;
-}
-.rushToBuy_top .rtb_time text{
+
+.rushToBuy_top .rtb_time text {
   display: inline-block;
   width: 40rpx;
   height: 40rpx;
@@ -570,7 +575,414 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
   text-align: center;
   color: #ffffff;
 }
-.rushToBuy .rushToBuy_bot swiper{
+
+.rushToBuy .rushToBuy_bot swiper {
   width: auto;
   height: 380rpx;
+}
+
+/* 拍拍购 */
+.patbuy {
+  width: 710rpx;
+  height: 260rpx;
+  margin: auto;
+  position: relative;
+}
+
+.patbuy .patbuy_bgimg {
+  width: 710rpx;
+  height: 260rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.patbuy .patbuy_content {
+  width: 100%;
+  height: auto;
+  padding: 20rpx;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.patbuy .patbuy_left_one {
+  width: 120rpx;
+  height: 40rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+
+.patbuy .patbuy_left_two {
+  width: 190rpx;
+  height: 27rpx;
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 1);
+  margin: 26rpx 0;
+}
+
+.patbuy .patbuy_left_hr {
+  width: 58rpx;
+  height: 4rpx;
+  background: rgba(255, 255, 255, 1);
+}
+
+.patbuy .patbuy_left_three {
+  width: 100rpx;
+  height: 60rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 30rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: rgba(255, 156, 14, 1);
+  text-align: center;
+  line-height: 60rpx;
+  margin-top: 20rpx;
+}
+
+.patbuy .patbuy_right {
+  width: 430rpx;
+  height: 220rpx;
+  padding: 0 25rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.patbuy_commodity image {
+  width: 81rpx;
+  height: 82rpx;
+  margin-top: 20rpx;
+}
+
+.patbuy_name {
+  font-size: 28rpx;
+  color: rgba(102, 102, 102, 1);
+  margin: 16rpx 0;
+}
+
+.patbuy_price {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: rgba(255, 180, 62, 1);
+}
+
+.recommendedBusiness .rb_bot swiper {
+  width: auto;
+  height: 300rpx;
+}
+
+.recommendedBusiness .rb_bot .merchant {
+  width: 260rpx;
+  height: 280rpx;
+  position: relative;
+  border: 1rpx solid rgba(229, 229, 229, 1);
+  border-radius: 10rpx;
+}
+
+.recommendedBusiness .rb_bot .merchant image {
+  width: 100%;
+  height: 100%;
+}
+
+.recommendedBusiness .rb_bot .merchant .merchant_top {
+  width: 260rpx;
+  height: 145rpx;
+}
+
+.recommendedBusiness .rb_bot .merchant .merchant_up {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  box-shadow: 0px 0px 16rpx 0px rgba(110, 160, 129, 0.3);
+  position: absolute;
+  top: 92rpx;
+  left: 80rpx;
+}
+
+.recommendedBusiness .rb_bot .merchant .merchant_up image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.recommendedBusiness .rb_bot .merchant .merchant_bot {
+  width: 260rpx;
+  height: 135rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+  line-height: 200rpx;
+}
+
+/* 推荐商品 等 tab页 */
+.tree_detail {
+  width: 100%;
+  height: auto;
+  background-color: #FAFAFC;
+}
+
+.nav_tabs {
+  width: 100%;
+  height: 135rpx;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_tabs .nav_tab {
+  width: 25%;
+  height: 135rpx;
+  font-size: 32rpx;
+  color: rgba(153, 153, 153, 1);
+  text-align: center;
+}
+
+.nav_tabs .active {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 1);
+}
+
+.nav_tabs .nav_tabs_hr {
+  width: 90rpx;
+  height: 8rpx;
+  margin: 0 auto;
+  margin-top: 32rpx;
+  background: rgba(101, 193, 121, 1);
+}
+
+.tree_detail .tab_ctn_img image {
+  width: 710rpx;
+  height: 180rpx;
+  margin-left: 20rpx;
+}
+
+.tab_ctn_view {
+  width: 100%;
+  height: auto;
+  padding: 0 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.fruit,.list{
+  width: 345rpx;
+  height: 545rpx;
+  margin: 10rpx 10rpx;
+  background-color: #ffffff;
+  position: relative;
+}
+
+/* .list {
+  width: 345rpx;
+  height: 545rpx;
+  border-radius: 10rpx;
+  margin-top: 10rpx;
+  position: relative;
+} */
+.fruit .restocking {
+  width: 345rpx;
+  height: 345rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 3;
+}
+
+.fruit .restocking view {
+  width: 127rpx;
+  height: 44rpx;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 44rpx;
+  color:rgba(255,255,255,1);
+  border-radius: 22rpx;
+  position: absolute;
+  top: 150rpx;
+  left: 109rpx;
+}
+
+.fruit .fruit_cz {
+  width: 56rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 30rpx;
+  position: absolute;
+}
+
+.fruit .fruit_cz image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.fruit .fruit_cz text {
+  position: absolute;
+  top: 0;
+  left: 8rpx;
+  z-index: 2;
+
+}
+
+.fruit .fruit_img {
+  width: 225rpx;
+  height: 225rpx;
+  padding: 60rpx;
+}
+
+.fruit .fruit_img image {
+  width: 225rpx;
+  height: 225rpx;
+}
+
+.fruit .fruit_name {
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+}
+
+.fruit .fruit_short {
+  padding-left: 20rpx;
+  margin-top: 18rpx;
+  margin-bottom: 43rpx;
+  font-size: 28rpx;
+  color: rgba(153, 153, 153, 1);
+}
+
+.fruit .fruit_price {
+  width: auto;
+  height: 30rpx;
+  position: relative;
+  padding-left: 20rpx;
+}
+
+.fruit .fruit_price text {
+  margin-top: 14rpx;
+  font-size: 29rpx;
+  font-weight: 500;
+  color: rgba(255, 168, 0, 1);
+}
+
+.fruit .fruit_price image {
+  width: 56rpx;
+  height: 56rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 270rpx;
+}
+
+
+.list .list_bgimg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.list_title {
+  position: relative;
+  z-index: 2;
+  margin-top: 17rpx;
+  width: 100%;
+  height: 31rpx;
+  font-size: 32rpx;
+  color: rgba(255, 255, 255, 1);
+  padding-left: 12rpx;
+}
+
+.list_short {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin-top: 15rpx;
+  margin-bottom: 14rpx;
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 1);
+  padding-left: 12rpx;
+}
+
+.list_contents {
+  width: 325rpx;
+  height: 390rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  position: relative;
+  z-index: 2;
+  padding-top: 40rpx;
+  margin-left: 10rpx;
+}
+
+.list_content {
+  width: 100%;
+  height: 80rpx;
+  position: relative;
+  margin-left: 37rpx;
+  margin-bottom: 45rpx;
+}
+
+.lc_left {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+}
+
+.lc_left_num {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 2rpx;
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+}
+
+.lc_left_1 {
+  background: rgba(255, 116, 14, 1);
+}
+
+.lc_left_2 {
+  background: rgba(255, 156, 14, 1);
+}
+
+.lc_left_3 {
+  background: rgba(255, 212, 14, 1);
+}
+
+.lc_left_img image {
+  width: 74rpx;
+  height: 80rpx;
+}
+
+.lc_right {
+  position: absolute;
+  top: 0;
+  left: 142rpx;
+}
+
+.lc_right_top {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+}
+
+.lc_right_bot {
+  margin-top: 14rpx;
+  font-size: 24rpx;
+  color: rgba(153, 153, 153, 1);
 }
