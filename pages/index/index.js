@@ -16,16 +16,28 @@ Page({
   },
   
   /*点击路由跳转*/
-  routing_search() {
+  router_search() {
     wx.navigateTo({
       url: '../search/index',
     })
   },
 
-  routing_news() {
+  router_news() {
     wx.navigateTo({
       url: '../news/index',
     })
+  },
+  router_collar(){
+    // wx.navigateTo({
+    //   url: '../news/index',
+    // })
+    console.log("领券")
+  },
+  router_panicBuying(){
+    console.log("立即抢购")
+  },
+  router_rushToBuy(){
+    console.log("整点抢购")
   },
   /*点击事件绑定*/
   dingwei() {
@@ -35,6 +47,9 @@ Page({
     console.log(e.detail.current)
   },
   sort(e){
+    console.log(e)
+  },
+  addCart(e){
     console.log(e)
   },
   onShow: function () {

@@ -1,9 +1,17 @@
 /**index.wxss**/
-.container{
+.container {
   width: 100%;
   height: auto;
 }
-.top{
+
+.hr {
+  width: 100%;
+  height: 20rpx;
+  background-color: #FAFAFC;
+  margin: 28rpx 0;
+}
+
+.top {
   width: 100%;
   height: auto;
   padding: 20rpx;
@@ -11,7 +19,8 @@
   position: absolute;
   z-index: 2;
 }
-.container .search{
+
+.container .search {
   width: 640rpx;
   height: 64rpx;
   background-color: #FAFAFC;
@@ -19,18 +28,20 @@
   font-size: 28rpx;
   display: flex;
 }
-.dingwei{
+
+.dingwei {
   display: inline-block;
   width: 33rpx;
   height: 33rpx;
   margin: 16rpx 10rpx 0 31rpx;
 }
-.dingwei image{
+
+.dingwei image {
   width: 100%;
   height: 100%;
   margin-top: -2rpx;
 }
-  
+
 .search_left {
   width: auto;
   height: 28rpx;
@@ -50,7 +61,8 @@
   border-left: 1rpx solid #999999;
   position: relative;
 }
-.search_right image{
+
+.search_right image {
   display: inline-block;
   width: 26rpx;
   height: 26rpx;
@@ -58,19 +70,22 @@
   position: absolute;
   top: 0;
   left: 75rpx;
- }
-.container .news{
+}
+
+.container .news {
   width: 50rpx;
   height: 50rpx;
   margin-left: 30rpx;
   margin-top: 7rpx;
   position: relative;
 }
-.container .news image{
+
+.container .news image {
   width: 100%;
   height: 100%;
 }
-.container .news text{
+
+.container .news text {
   width: 28rpx;
   height: 28rpx;
   border-radius: 50%;
@@ -81,28 +96,31 @@
   background-color: #E80000;
   position: absolute;
   top: -10rpx;
-  left: 26rpx;  
+  left: 26rpx;
 }
-.swiper_banner swiper{
+
+.swiper_banner swiper {
   width: 100%;
   height: 435rpx;
   position: relative;
 }
-swiper .swiper_image image{
+
+swiper .swiper_image image {
   display: inline-block;
   width: 100%;
   height: 435rpx;
 }
+
 /* 设置点点的层级 */
- 
+
 swiper .wx-swiper-dots.wx-swiper-dots-horizontal {
   position: absolute;
   top: 400rpx;
   z-index: 2;
 }
- 
+
 /* 设置点点的样式 */
- 
+
 swiper .wx-swiper-dot {
   width: 20rpx;
   display: inline-flex;
@@ -111,44 +129,448 @@ swiper .wx-swiper-dot {
   margin-left: 8rpx;
   justify-content: space-between;
 }
- 
+
 swiper .wx-swiper-dot::before {
   content: '';
   flex-grow: 1;
   background-color: #000000;
-  opacity:0.5;
+  opacity: 0.5;
   border-radius: 4rpx;
 }
- 
+
 /* 当前点点的样式 */
 swiper .wx-swiper-dot-active::before {
   background-color: #65C179;
-  opacity:0.9;
+  opacity: 0.9;
 }
+
 swiper .wx-swiper-dot.wx-swiper-dot-active {
   width: 30rpx;
 }
-.swiper_sort swiper{
+
+.swiper_sort swiper {
   width: 100%;
   height: 413rpx;
   padding-bottom: 20rpx;
   position: relative;
 }
+
 .swiper_sort swiper-item {
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.sort{
+
+.sort {
   width: 120rpx;
   height: auto;
-  font-size:28rpx;
+  font-size: 28rpx;
   text-align: center;
-  margin: 32rpx 16rpx 5rpx 15rpx ;
+  margin: 32rpx 16rpx 5rpx 15rpx;
 }
-.sort image{
+
+.sort image {
   width: 96rpx;
   height: 96rpx;
   margin-bottom: 5rpx;
+}
+
+.collar {
+  width: 710rpx;
+  height: 170rpx;
+  margin: 32rpx auto;
+}
+
+.collar image {
+  width: 100%;
+  height: 100%;
+}
+
+/*特色专区*/
+.featuredArea {
+  width: 100%;
+  height: auto;
+  padding: 0 20rpx;
+}
+
+.featuredArea .featuredArea_title {
+  width: 730rpx;
+  height: 33rpx;
+  font-size: 34rpx;
+  line-height: 33rpx;
+  margin-bottom: 26rpx;
+}
+
+.featuredArea .featuredArea_title::before {
+  content: "";
+  display: inline-block;
+  width: 10rpx;
+  height: 30rpx;
+  background: rgba(101, 193, 121, 1);
+  margin-right: 20rpx;
+}
+
+.featuredArea .area {
+  width: 710rpx;
+  height: 460rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featuredArea .area image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+  margin-right: 30rpx;
+  margin-top: 10rpx;
+}
+
+.featuredArea .area .area_one {
+  width: 49.7%;
+  height: 50%;
+  border: 0.5rpx solid rgba(229, 229, 229, 1);
+  border-top-left-radius: 20rpx;
+}
+
+.featuredArea .area .area_one .title {
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  background: linear-gradient(117deg, #FF5B29 0%, #FE8300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.short {
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+  font-size: 24rpx;
+  color: rgba(153, 153, 153, 1);
+}
+
+.featuredArea .area .area_two {
+  width: 49.7%;
+  height: 50%;
+  border: 0.5rpx solid rgba(229, 229, 229, 1);
+  border-top-right-radius: 20rpx;
+}
+
+.featuredArea .area .area_two .title {
+  color: rgba(255, 49, 78, 1);
+  font-size: 30rpx;
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+}
+
+.featuredArea .area .area_three {
+  width: 49.7%;
+  height: 50%;
+  border: 0.5rpx solid rgba(229, 229, 229, 1);
+  border-bottom-left-radius: 20rpx;
+}
+
+.featuredArea .area .area_three .title {
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  background: linear-gradient(117deg, rgba(71, 173, 93, 1) 0%, rgba(101, 193, 121, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.featuredArea .area .area_four {
+  width: 49.7%;
+  height: 50%;
+  border: 0.5rpx solid rgba(229, 229, 229, 1);
+  border-bottom-right-radius: 20rpx;
+  display: flex;
+}
+
+.featuredArea .area .area_four .title {
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.featuredArea .area .area_four .area_four_one {
+  width: 49.7%;
+  height: 100%;
+  border-right: 0.5rpx solid rgba(229, 229, 229, 1);
+}
+
+/* 平价菜场 */
+.parityMarket {
+  width: 710rpx;
+  height: 270rpx;
+  margin: 0 auto;
+  background: linear-gradient(180deg, rgba(170, 237, 185, 1), rgba(101, 193, 121, 1));
+  border-radius: 10rpx;
+}
+
+.parityMarket .parityMarket_top {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+
+}
+
+.parityMarket_top .pt_left {
+  margin-left: 18rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: rgba(33, 123, 53, 1);
+  line-height: 80rpx;
+}
+
+.parityMarket_top .pt_txt {
+  width: 356rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  margin-top: 31rpx;
+  margin-left: 17rpx;
+  border-left: 1rpx solid #288B3D;
+  padding-left: 18rpx;
+  font-size: 26rpx;
+  color: rgba(33, 123, 53, 1)
+}
+
+.parityMarket_top .pt_right {
+  width: 160rpx;
+  height: 56rpx;
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(255, 116, 14, 1);
+  border-radius: 28rpx;
+  text-align: center;
+  line-height: 56rpx;
+  margin-top: 14rpx;
+}
+
+.parityMarket_top .pt_right image {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.parityMarket .parityMarket_bot {
+  width: 690rpx;
+  height: 180rpx;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  display: flex;
+}
+
+.parityMarket .parityMarket_bot .parityMarket_article {
+  width: 173rpx;
+  height: 120rpx;
+
+}
+
+.parityMarket .parityMarket_bot .parityMarket_article image {
+  width: 134rpx;
+  height: 120rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+
+.parityMarket .parityMarket_bot .parityMarket_article view {
+  display: inline-block;
+  width: 80rpx;
+  height: 37rpx;
+
+  position: relative;
+}
+
+.parityMarket .parityMarket_bot .parityMarket_article view image {
+  width: 80rpx;
+  height: 37rpx;
+  margin-top: 0;
+  margin-left: 75rpx;
+  position: absolute;
+  z-index: 1;
+}
+
+.parityMarket .parityMarket_bot .parityMarket_article view text {
+  display: inline-block;
+  width: 70rpx;
+  height: 37rpx;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 38rpx;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  z-index: 2;
+  left: 83rpx;
+}
+
+/* 拼购 */
+.buyTogether {
+  width: 710rpx;
+  height: 500rpx;
+  margin: auto;
+  background-color: #ACCBFF;
+  border-radius: 20rpx;
+}
+
+.buyTogether .buyTogether_top {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.buyTogether .bt_left {
+  margin-left: 18rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #144984;
+  line-height: 100rpx;
+}
+
+.buyTogether .bt_txt {
+  width: 356rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  margin-top: 38rpx;
+  margin-left: 17rpx;
+  border-left: 1rpx solid #144984;
+  padding-left: 18rpx;
+  font-size: 26rpx;
+  color: #144984;
+}
+
+.buyTogether .bt_right {
+  width: 160rpx;
+  height: 56rpx;
+  font-size: 28rpx;
+  color: #144984;
+  border-radius: 28rpx;
+  text-align: center;
+  line-height: 56rpx;
+  position: absolute;
+  top: 5rpx;
+  left: 579rpx;
+
+}
+
+.buyTogether .bt_right image {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.buyTogether .buyTogether_bot {
+  width: 670rpx;
+  height: 380rpx;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  width: 210rpx;
+  height: 380rpx
+}
+
+.article .article_img image {
+  width: 210rpx;
+  height: 210rpx;
+  margin-top: 10rpx;
+}
+
+.article .article_name {
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+}
+
+.article .article_weight {
+  padding-left: 20rpx;
+  margin-top: 18rpx;
+  font-size: 24rpx;
+  color: rgba(153, 153, 153, 1);
+}
+
+.article .article_price {
+  width: auto;
+  height: 30rpx;
+  position: relative;
+  padding-left: 20rpx;
+}
+
+.article .article_price text {
+  margin-top: 14rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: rgba(255, 168, 0, 1);
+}
+
+.article .article_price image {
+  width: 56rpx;
+  height: 56rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 119rpx;
+
+}
+/* 整点抢购 */
+.rushToBuy{
+  width: 100%;
+  height: auto;
+  padding: 0 20rpx;
+}
+.rushToBuy_top{
+  width: 710rpx;
+  height: 93rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.rushToBuy_top .rtb_title {
+  width: 166rpx;
+  height: 33rpx;
+  font-size: 34rpx;
+  line-height: 33rpx;
+  font-family:PingFang SC;
+  font-weight:600;
+}
+
+.rushToBuy_top .rtb_title::before {
+  content: "";
+  display: inline-block;
+  width: 10rpx;
+  height: 30rpx;
+  background: rgba(101, 193, 121, 1);
+  margin-right: 20rpx;
+}
+.rushToBuy_top .rtb_time{
+  width: 400rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.rushToBuy_top .rtb_right{
+  width: 100rpx;
+  height: 28rpx;
+  color:rgba(153,153,153,1);
+}
+.rushToBuy_top .rtb_right image{
+  width: 14rpx;
+  height: 26rpx;
+}
+.rushToBuy_top .rtb_time text{
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 10rpx;
+  background-color: #65c179;
+  text-align: center;
+  color: #ffffff;
+}
+.rushToBuy .rushToBuy_bot swiper{
+  width: auto;
+  height: 380rpx;
 }
