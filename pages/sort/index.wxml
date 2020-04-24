@@ -1,2 +1,62 @@
 <!--pages/sort/index.wxml-->
-<text>pages/sort/index.wxml</text>
+<view class="sort_search">
+	<image src="./../icon/search.png"></image>
+	<text>搜索食品</text>
+</view>
+<view class="sort_swiper">
+	<swiper display-multiple-items="5.5" bindchange="sort_swiper">
+		<block wx:for="{{10}}" wx:key="*this">
+			<swiper-item>
+				<view class="sort_nav {{swiperIndex == index?'active':''}}" data-index="{{index}}" catchtap="sort_nav">
+					<image src="./../images/sort1.png"></image>
+					<view>休闲零食{{index}}</view>
+				</view>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+<view class="sort_content">
+	<view class="sc_left">
+		<block wx:for="{{10}}" wx:key="*this">
+			<view class="sc_left_tab {{sclTabIndex == index?'active':''}}" data-index="{{index}}" catchtap="sc_left_tab">{{index}}</view>
+		</block>
+	</view>
+	<view class="sc_right">
+		<view class="scr_filter">
+			<view class="price">
+				<view class="scrt_txt" catchtap="price">价格</view>
+				<view class="scrt_img">
+					<image src="{{price==0?'./../icon/upH.png':'./../icon/upL.png'}}" />
+					<image src="{{price==0?'./../icon/downL.png':'./../icon/downH.png'}}" />
+				</view>
+				<view class="scrt_img">
+					<image src="{{price==0?'./../icon/upL.png':'./../icon/upH.png'}}" />
+					<image src="{{price==0?'./../icon/downH.png':'./../icon/downL.png'}}" />
+				</view>
+			</view>
+			<view class="sales">
+				<view class="scrt_txt" catchtap="sales">销量</view>
+				<view class="scrt_img">
+					<image src="{{sales==0?'./../icon/upH.png':'./../icon/upL.png'}}" />
+					<image src="{{sales==0?'./../icon/downL.png':'./../icon/downH.png'}}" />
+				</view>
+			</view>
+		</view>
+		<block wx:for="{{10}}" wx:key="*this">
+			<view class="article">
+				<view class="article_img">
+					<image src="./../images/cai.png"></image>
+				</view>
+				<view>
+					<view class="article_name">{{sclTabIndex}}四川水蜜桃500g</view>
+					<view class="article_weight">中华蜜桃之乡，龙泉特产</view>      
+          <view class="article_weight">月售30</view>
+					<view class="article_price"><text>￥18.6</text>
+						<image data-id="" src="./../icon/cart.png" catchtap="addCart"></image>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+<!-- circular="true" easing-function="easeInOutCubic" -->

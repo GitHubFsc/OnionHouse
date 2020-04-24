@@ -1,2 +1,53 @@
 <!--pages/ShoppingCart/index.wxml-->
-<text>pages/ShoppingCart/index.wxml</text>
+<view class="cart_edit" catchtap="cart_edit">{{cart_edit?"编辑":"完成"}}</view>
+<view class="cart_contents">
+	<block wx:for="{{3}}" wx:key="*this">
+		<view class="cart_content">
+			<view class="cart_merchant">
+				<view class="cm_all" catchtap="cm_all">
+					<image src="{{cm_all?'./../icon/activeL.png':'./../icon/activeW.png'}}" />
+				</view>
+				<view class="cm_name">21cake</view>
+				<view class="cm_gd" catchtap="cm_gd">
+					<image class="gengduo" src="./../icon/gengduo16.png" />
+				</view>
+			</view>
+			<block wx:for="{{3}}" wx:key="*this">
+				<view class="cart_commodity">
+					<view class="cc_active" catchtap="cc_active">
+						<image src="{{cm_all?'./../icon/activeL.png':'./../icon/activeW.png'}}" />
+					</view>
+					<view class="cc_img">
+						<image src="./../images/1.png"></image>
+					</view>
+					<view class="cc_short">
+						<view>黄桃500g</view>
+						<view>新品上市，新鲜</view>
+						<view>￥150</view>
+					</view>
+					<view class="cc_total">
+						<image src="./../icon/less.png"></image>
+						<view class="cc_total_txt">1</view>
+						<image src="./../icon/add.png"></image>
+					</view>
+				</view>
+			</block>
+      <view class="cart_total">
+        <view class="cart_total_left">共3件</view>
+        <view class="cart_total_right">
+          <view>￥300.00</view>
+          <view>结算</view>
+        </view>
+			</view>
+		</view>
+    <view class="hr"></view>
+	</block>
+</view>
+<view class="cart_bot">
+	<view class="select_all" catchtap="select_all">
+		<image src="{{select_all?'./../icon/activeL.png':'./../icon/activeW.png'}}"></image>
+	</view>
+	<view class="select_txt">全选</view>
+	<view class="select_total" hidden="{{!cart_edit}}">共{{num}}件商品，合计¥{{total}}</view>
+	<view class="select_btn">一键结算</view>
+</view>

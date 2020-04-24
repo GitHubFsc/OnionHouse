@@ -1,2 +1,106 @@
 <!--pages/my/index.wxml-->
-<text>pages/my/index.wxml</text>
+<view class="my_top">
+	<image src="./../icon/myshezhi.png" />
+	<image src="./../icon/mynews.png" />
+</view>
+<view class="user">
+	<image class="user_tx" src="./../images/user.png"></image>
+	<block wx:if="{{!user}}">
+		<view class="user_use">
+			<view>子曰学而时习之</view>
+			<view>1888898989</view>
+		</view>
+		<image class="gengduo" src="./../icon/gengduo18.png" />
+	</block>
+	<block wx:else>
+		<view class="user_no">登录/注册</view>
+	</block>
+</view>
+<view class="user_member">
+	<image class="memberbg" src="./../images/memberbg.png" />
+	<image src="./../images/member.png" />
+	<view class="user_member_txt">成为会员省更多</view>
+	<view class="user_member_btn">申请会员</view>
+</view>
+<view class="user_content">
+	<view class="uc_money">
+		<view class="ucm_view">
+			<view class="ucmv_top">0</view>
+			<view class="ucmv_bot">优惠券</view>
+		</view>
+		<view class="ucm_view">
+			<view class="ucmv_top">0</view>
+			<view class="ucmv_bot">葱粒</view>
+		</view>
+		<view class="ucm_view">
+			<view class="ucmv_top">0</view>
+			<view class="ucmv_bot">葱呗</view>
+		</view>
+		<view class="ucm_view">
+			<view class="ucmv_top">0</view>
+			<view class="ucmv_bot">账户余额</view>
+		</view>
+	</view>
+	<view class="uc_order">
+		<view class="uc_title">我的订单
+			<image class="gengduo" src="./../icon/gengduo18.png" />
+		</view>
+		<view class="uc_sorts">
+			<view class="uc_sort">
+				<image src="./../icon/Unpaid.png" style="width: 46rpx;height: 39rpx;" />
+				<view>未付款</view>
+			</view>
+			<view class="uc_sort">
+				<image src="./../icon/Alreadypaid.png" style="width: 44rpx;height: 44rpx;" />
+				<view>已付款</view>
+			</view>
+			<view class="uc_sort">
+				<image src="./../icon/Tobereceived.png" style="width: 44rpx;height: 38rpx;" />
+				<view>待收货</view>
+			</view>
+			<view class="uc_sort">
+				<image src="./../icon/Beevaluated.png" style="width: 50rpx;height: 43rpx;" />
+				<view>待评价</view>
+			</view>
+		</view>
+	</view>
+	<view class="uc_other">
+		<view class="uc_title" style="border-bottom:1rpx solid #E5E5E5;  margin-bottom: 43rpx;">其他</view>
+		<view class="uc_sorts">
+			<view class="uc_sort">
+				<image src="./../icon/Refund.png" style="width: 48rpx;height: 48rpx;" />
+				<view>退款/售后</view>
+			</view>
+			<view class="uc_sort">
+				<image src="./../icon/Buytogether.png" style="width: 49rpx;height: 49rpx;" />
+				<view>我的拼购</view>
+			</view>
+			<view class="uc_sort">
+				<image src="./../icon/Patbuy.png" style="width: 64rpx;height: 60rpx;" />
+				<view>我的拍拍购</view>
+			</view>
+			<view class="uc_sort">
+				<image src="./../icon/address.png" style="width: 46rpx;height: 54rpx;" />
+				<view>地址管理</view>
+			</view>
+		</view>
+		<view class="uc_sorts">
+			<view class="uc_sort">
+				<image src="./../icon/invoice.png" style="width: 59rpx;height: 45rpx;" />
+				<view>发票管理</view>
+			</view>
+			<view class="uc_sort">
+				<image src="./../icon/Collect.png" style="width: 52rpx;height: 52rpx;" />
+				<view>我的收藏 </view>
+			</view>
+			<view class="uc_sort">
+				<image src="./../icon/Customerservice.png" style="width: 49rpx;height: 51rpx;" />
+				<view>客服</view>
+			</view>
+			<view class="uc_sort">
+				<image src="./../icon/Merchantssettled.png" style="width: 49rpx;height: 50rpx;" />
+				<view>商家入驻</view>
+			</view>
+		</view>
+	</view>
+</view>

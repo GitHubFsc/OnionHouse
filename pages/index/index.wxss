@@ -3,19 +3,6 @@
   width: 100%;
   height: auto;
 }
-
-.hr {
-  width: 100%;
-  height: 20rpx;
-  background-color: #FAFAFC;
-  margin: 28rpx 0;
-}
-
-.gengduo {
-  width: 14rpx;
-  height: 26rpx;
-}
-
 .top {
   width: 100%;
   height: auto;
@@ -197,6 +184,7 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
   width: 100%;
   height: auto;
   padding: 0 20rpx;
+  margin-bottom: 32rpx;
 }
 
 .featuredArea .featuredArea_title {
@@ -314,7 +302,7 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
 .parityMarket {
   width: 710rpx;
   height: 270rpx;
-  margin: 0 auto;
+  margin: 32rpx auto;
   background: linear-gradient(180deg, rgba(170, 237, 185, 1), rgba(101, 193, 121, 1));
   border-radius: 10rpx;
 }
@@ -415,7 +403,7 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
 .buyTogether {
   width: 710rpx;
   height: 500rpx;
-  margin: auto;
+  margin:32rpx  auto;
   background-color: #ACCBFF;
   border-radius: 20rpx;
 }
@@ -526,6 +514,7 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
   width: 100%;
   height: auto;
   padding: 0 20rpx;
+  margin: 32rpx auto;
 }
 
 .rushToBuy_top,
@@ -585,7 +574,7 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
 .patbuy {
   width: 710rpx;
   height: 260rpx;
-  margin: auto;
+  margin: 32rpx auto;
   position: relative;
 }
 
@@ -724,6 +713,7 @@ swiper .wx-swiper-dot.wx-swiper-dot-active {
   width: 100%;
   height: auto;
   background-color: #FAFAFC;
+  margin-top: 32rpx;
 }
 
 .nav_tabs {

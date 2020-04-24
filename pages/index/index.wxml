@@ -100,7 +100,7 @@
 					<view class="short">7天不重样</view>
 					<image src="./../images/sort1.png"></image>
 				</view>
-				<view class="area_four_one">
+				<view class="area_four_two">
 					<view class="title">地方特产</view>
 					<view class="short">香蕉2.59</view>
 					<image src="./../images/sort2.png"></image>
@@ -274,7 +274,11 @@
 						</block>
 						<block wx:else>
 							<view class="fruit">
-								<block wx:if="{{index == 0}}"><view class="restocking"><view>补货中</view></view></block>
+								<block wx:if="{{index == 0}}">
+									<view class="restocking">
+										<view>补货中</view>
+									</view>
+								</block>
 								<view class="fruit_cz">
 									<image src="./../images/cz.png"></image>
 									<text>超值</text>

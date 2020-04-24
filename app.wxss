@@ -1,2 +1,12 @@
 /**app.wxss**/
+.hr {
+  width: 100%;
+  height: 20rpx;
+  background-color: #FAFAFC;
+  /* margin: 28rpx 0; */
+}
 
+.gengduo {
+  width: 14rpx;
+  height: 26rpx;
+}

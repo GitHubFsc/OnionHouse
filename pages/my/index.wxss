@@ -1,1 +1,207 @@
 /* pages/my/index.wxss */
+.my_top {
+  width: 710rpx;
+  height: 88rpx;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_top image:nth-child(1) {
+  width: 41rpx;
+  height: 42rpx;
+  margin-top: 14rpx;
+}
+
+.my_top image:nth-child(2) {
+  width: 44rpx;
+  height: 44rpx;
+  margin-top: 22rpx;
+}
+
+/* 用户 */
+.user {
+  width: 710rpx;
+  height: 184rpx;
+  padding: 0 20rpx;
+  display: flex;
+  position: relative;
+}
+
+.user_tx {
+  width: 110rpx;
+  height: 110rpx;
+  margin-top: 7rpx;
+  margin-right: 20rpx;
+}
+
+.user_no {
+  width: 250rpx;
+  height: 100%;
+  line-height: 120rpx;
+  font-size: 32rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.user_use {
+  width: 250rpx;
+  height: 110rpx;
+}
+
+.user_use view:nth-child(1) {
+  margin-top: 11rpx;
+  font-size: 32rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.user_use view:nth-child(2) {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.gengduo {
+  width: 18rpx;
+  height: 34rpx;
+  position: absolute;
+  top: 20%;
+  left: 91%;
+}
+
+.user_member {
+  width: 710rpx;
+  height: 88rpx;
+  position: absolute;
+  top: 254rpx;
+  left: 20rpx;
+}
+
+.memberbg {
+  width: 710rpx;
+  height: 88rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.user_member image:nth-child(2) {
+  width: 56rpx;
+  height: 51rpx;
+  position: absolute;
+  z-index: 2;
+  top: 13rpx;
+  left: 21rpx;
+}
+
+.user_member .user_member_txt {
+  height: 100%;
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 1);
+  line-height: 51rpx;
+  position: absolute;
+  z-index: 2;
+  top: 20rpx;
+  left: 96rpx;
+}
+
+.user_member .user_member_btn {
+  width: 140rpx;
+  height: 48rpx;
+  text-align: center;
+  background: rgba(204, 173, 121, 1);
+  border-radius: 24rpx;
+  font-size: 26rpx;
+  color: rgba(255, 254, 254, 1);
+  line-height: 48rpx;
+  position: absolute;
+  z-index: 2;
+  top: 20rpx;
+  left: 541rpx;
+}
+
+.user_content {
+  width: 100%;
+  height: 920rpx;
+  background-color: #FAFAFC;
+  padding-top: 89rpx;
+}
+
+.uc_money {
+  width: 710rpx;
+  height: 140rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  margin: auto;
+  display: flex;
+}
+
+.ucm_view {
+  width: 25%;
+  height: 140rpx;
+  text-align: center;
+}
+
+.ucmv_top {
+  margin-top: 24rpx;
+  font-size: 32rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.ucmv_bot {
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.uc_order {
+  width: 710rpx;
+  height: 240rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  margin: 20rpx auto;
+
+}
+
+.uc_other {
+  width: 710rpx;
+  height: 480rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  margin: auto;
+}
+
+.uc_title {
+  width: 710rpx;
+  height: 103rpx;
+  padding-left: 20rpx;
+  position: relative;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  line-height: 103rpx;
+}
+
+.uc_title .gengduo {
+  top: 30%;
+}
+
+.uc_sorts {
+  width: 100%;
+  height: 176rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.uc_sort {
+  width: 25%;
+  height: 100rpx;
+  text-align: center;
+  position: relative;
+}
+.uc_sort view {
+  width: 100%;
+  font-size: 26rpx;
+  color: rgba(51, 51, 51, 1);
+  position: absolute;
+  top: 80rpx;
+}

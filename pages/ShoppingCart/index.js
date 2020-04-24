@@ -5,9 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    cart_edit : true,
+    select_all : false
   },
 
+  cart_edit(){
+    let that = this;
+    that.setData({
+      cart_edit : !that.data.cart_edit
+    })
+  },
+  select_all(){
+    let that = this;
+    that.setData({
+      select_all : !that.data.select_all
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
