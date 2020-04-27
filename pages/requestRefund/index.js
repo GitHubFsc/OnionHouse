@@ -1,4 +1,4 @@
-// pages/my/index.js
+// pages/requestRefund/index.js
 Page({
 
   /**
@@ -7,11 +7,7 @@ Page({
   data: {
 
   },
-  router_myorder(e){
-    wx.navigateTo({
-      url: './../myOrder/index?currentTab='+e.currentTarget.dataset.index,
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

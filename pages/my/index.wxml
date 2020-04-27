@@ -42,23 +42,23 @@
 		</view>
 	</view>
 	<view class="uc_order">
-		<view class="uc_title">我的订单
+		<view class="uc_title" data-index="0" catchtap="router_myorder">我的订单
 			<image class="gengduo" src="./../icon/gengduo18.png" />
 		</view>
-		<view class="uc_sorts">
+		<view class="uc_sorts" data-index="1" catchtap="router_myorder">
 			<view class="uc_sort">
 				<image src="./../icon/Unpaid.png" style="width: 46rpx;height: 39rpx;" />
 				<view>未付款</view>
 			</view>
-			<view class="uc_sort">
+			<view class="uc_sort" data-index="2" catchtap="router_myorder">
 				<image src="./../icon/Alreadypaid.png" style="width: 44rpx;height: 44rpx;" />
 				<view>已付款</view>
 			</view>
-			<view class="uc_sort">
+			<view class="uc_sort" data-index="3" catchtap="router_myorder">
 				<image src="./../icon/Tobereceived.png" style="width: 44rpx;height: 38rpx;" />
 				<view>待收货</view>
 			</view>
-			<view class="uc_sort">
+			<view class="uc_sort" data-index="4" catchtap="router_myorder">
 				<image src="./../icon/Beevaluated.png" style="width: 50rpx;height: 43rpx;" />
 				<view>待评价</view>
 			</view>

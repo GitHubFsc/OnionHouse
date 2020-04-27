@@ -1,5 +1,6 @@
 const sign = '4c911e8b85fdbda6e79dcae85b6b33cc';
 const base = 'https://xingyunkepuapi.zztv021.com/';
+// 封装post请求
 const post = (url, data) => {
   var promise = new Promise((resolve, reject) => {
     //网络请求

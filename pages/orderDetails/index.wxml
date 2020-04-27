@@ -1,0 +1,144 @@
+<!--pages/orderDetails/index.wxml-->
+<view class="order_Details">
+	<!-- 付款状态 -->
+	<view class="od_title">
+		<image src="./../icon/Unpaid.png" style="width: 46rpx;height: 39rpx;" wx:if="{{order_status==1}}" />
+		<image src="./../icon/Alreadypaid.png" style="width: 44rpx;height: 44rpx;" wx:if="{{order_status==2||order_status==3}}" />
+		<image src="./../icon/Tobereceived.png" style="width: 44rpx;height: 38rpx;" wx:if="{{order_status==4}}" />
+		<image src="./../icon/Beevaluated.png" style="width: 50rpx;height: 43rpx;" wx:if="{{order_status==5}}" />
+		<view class="odt_status_b">{{order_status==1?"待付款":order_status==2?"已付款":order_status==3?"已付款":order_status==4?"待收货":order_status==5?"待评价":""}}</view>
+		<view class="odt_status_a" wx:if="{{order_status==2||order_status==3}}">等待发货</view>
+		<view class="odt_time" wx:if="{{order_status==1}}">00:00:20 不付款订单将自动取消</view>
+	</view>
+	<view class="hr"></view>
+	<!-- 物流信息 -->
+	<view class="od_wl">
+		<image src="./../icon/wl.png" />
+		<view class="odw_left">
+			<view>运输中</view>
+			<view>您的快递 已经到达上海分拨中心</view>
+			<view>2020-03-04 12:00</view>
+		</view>
+	</view>
+	<view class="hr"></view>
+	<!-- 用户基本信息 -->
+	<view class="od_user">
+		<view>李女士 18888888888</view>
+		<view>上海市长宁区延安西路1088号长峰中心2807</view>
+	</view>
+	<view class="hr"></view>
+	<!-- 备注 -->
+	<view class="od_bz">
+		<view>备注信息</view>
+		<view>无备注</view>
+	</view>
+	<view class="hr"></view>
+	<!-- 商品信息 -->
+	<view class="od_sp">
+		<view class="odsp_title">
+			<image class="odsp_img" src="./../images/merchant.png" />
+			<view class="odsp_name">快乐肥宅水</view>
+		</view>
+		<block wx:for="{{2}}" wx:key="*this">
+			<view class="odsp_content">
+				<image class="odspc_img" src="./../images/fruit.png" />
+				<view class="odsp_right">
+					<view><text>牛肉</text><text class="odsp_price"><text>￥</text>28</text></view>
+					<view><text class="odsp_num">x1</text><text class="odsp_btn">申请退款</text></view>
+				</view>
+			</view>
+		</block>
+
+	</view>
+	<!-- 商品数据 -->
+	<view class="odsp_data">
+		<view class="odsp_spkd">
+			<view>
+				<text>商品价格</text>
+				<text>￥2</text>
+			</view>
+			<view>
+				<text>快递费</text>
+				<text>￥2</text>
+			</view>
+		</view>
+		<view class="odsp_details">
+			<text>优惠券</text>
+			<text class="odsp_textred">-￥2</text>
+		</view>
+		<view class="odsp_details">
+			<text>葱粒</text>
+			<text class="odsp_textred">-￥2</text>
+		</view>
+		<view class="odsp_details">
+			<text>合计</text>
+			<text class="odsp_textbig">￥74</text>
+		</view>
+	</view>
+	<view class="hr"></view>
+	<!-- 抢购详情 -->
+	<view class="od_qg">
+		<view class="odqg_totalprice text_red">
+			抢购总价：28.00
+		</view>
+		<view class="odqg_phaseone">
+			<view class="text_red">阶段1:已完成</view>
+			<view><text>商品定金</text><text>¥10</text></view>
+			<view><text class="text_black">实付款</text><text class="text_red">¥10</text></view>
+		</view>
+		<view class="odqg_phasetwo">
+			<view class="text_red">阶段2:已完成</view>
+			<view><text>商品尾款</text><text>¥18</text></view>
+			<view><text>优惠券</text><text>-￥2</text></view>
+			<view><text>葱粒</text><text>-￥2</text></view>
+			<view><text>快递费</text><text>￥5</text></view>
+			<view><text>商品应付尾款</text><text>¥19</text></view>
+			<view><text class="text_black">实付款</text><text class="text_red">¥19</text></view>
+		</view>
+	</view>
+	<view class="hr"></view>
+	<!-- 发票 -->
+	<view class="od_fp">
+		<view class="odfp_top">
+			<view>发票</view>
+			<view>不要发票</view>
+		</view>
+		<view class="odfp_bot">
+			<view class="odfpb_fp">个人发票</view>
+			<view class="odfpb_name">张三</view>
+			<view class="odfpb_btn">查看发票</view>
+		</view>
+	</view>
+	<view class="hr"></view>
+	<!-- 订单信息 -->
+	<view class="od_dd">
+		<view class="odd_title">订单信息</view>
+		<view class="odd_txt">
+			<text>订单号</text>
+			<text>8989898</text>
+		</view>
+		<view class="odd_txt">
+			<text>付款时间</text>
+			<text>2019-06-25 19:26</text>
+		</view>
+		<view class="odd_txt">
+			<text>付款方式</text>
+			<text>葱呗分期</text>
+		</view>
+		<view class="odd_txt">
+			<view>葱呗分期账单</view>
+			<view>¥2x6期（含利息）
+				<image class="gengduo" src="./../icon/gengduo18.png" />
+			</view>
+		</view>
+	</view>
+	<view class="hr"></view>
+	<!-- 底部按钮 -->
+	<view class="od_bot">
+		<view class="top"></view>
+		<view class="bot">
+			<view class="odb_cancel" wx:if="{{true}}">取消订单</view>
+			<view class="odb_confirm" wx:if="{{true}}">立即付款</view>
+		</view>
+	</view>
+</view>

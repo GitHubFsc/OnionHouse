@@ -1,17 +1,13 @@
-// pages/my/index.js
+// pages/orderDetails/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    order_status : 1
+  },
 
-  },
-  router_myorder(e){
-    wx.navigateTo({
-      url: './../myOrder/index?currentTab='+e.currentTarget.dataset.index,
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */

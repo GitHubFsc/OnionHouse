@@ -298,4 +298,16 @@
 			</block>
 		</view>
 	</view>
+	<!-- 个人信息保护指引 -->
+	<view class="pact" hidden="{{pact}}">
+		<view class="bullet_box">
+			<view class="pact_title">个人信息保护指引</view>
+			<view class="pact_txt">请充分阅读并理解后再点击以下的按钮 </view>
+			<view class="pact_txt"> 1、这是一段话一段话一段话一段话这是一段话一段话一段话一段话这是一段话一段话一段话一段话这是一段话一段</view>
+			<view class="pact_txt">2、话一段话一段话这是一段话一段话一段话一段话这是一段话一段话一段</view>
+			<view class="pact_txt">3、话一段话这是一段话一段话一段话一段话这是一段话一段话一段话一段话这是一段话一段话一段话一段话，</view>
+			<view class="pact_txt"> 需要同意 <text>《隐私政策》 </text> 和 <text> 《用户协议》</text></view>
+			<view class="pact_know" catchtap="pact_know">我知道了</view>
+		</view>
+	</view>
 </view>

@@ -67,6 +67,27 @@
 					"id": -1,
 					"name": "我的",
 					"pathName": "pages/my/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/myOrder/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/orderDetails/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "申请退款",
+					"pathName": "pages/requestRefund/index",
 					"scene": null
 				}
 			]

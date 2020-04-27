@@ -1,0 +1,43 @@
+<!--pages/myOrder/index.wxml-->
+<view class="my_order">
+	<view class="mo_tab">
+		<block wx:for="{{nav_tab}}" wx:key="*this">
+			<view class="nav_tab {{index==currentTab?'active':''}}" data-index="{{index}}" catchtap="nav_tab">{{item}}
+				<view wx:if="{{index==currentTab}}" class="nav_tabs_hr"></view>
+			</view>
+		</block>
+	</view>
+	<view class="tab_ctns">
+		<block wx:for="{{5}}" wx:key="*this">
+			<view class="tab_ctn" wx:if="{{index==currentTab}}" data-index="{{index}}">
+				<block wx:for="{{6}}" wx:key="*this">
+					<view class="fruit">
+						<view class="fruit_title">
+							<image class="shop_img" src="./../images/merchant.png" />
+							<view class="shop_name">快乐肥宅水</view>
+							<view class="shop_status">{{index?index==0?"全部":index==1?"未付款":index==2?"待付尾款":index==3?"已付款":index==4?"待收货":index==5?"待评价":"":"全部"}}</view>
+						</view>
+						<block wx:for="{{2}}" wx:key="*this">
+							<view class="fruit_content">
+								<image class="fruit_img" src="./../images/fruit.png" />
+								<view class="fc_right">
+									<view class="fruit_name">{{index}}中华水蜜桃之乡</view>
+									<view class="fruit_num">x1</view>
+									<view class="fruit_price"><text>￥</text>150</view>
+								</view>
+							</view>
+						</block>
+						<view class="fruit_bot">
+							<view class="fb_total">合计￥<text>150</text></view>
+							<view class="fb_right">
+								<view class="fb_wk" wx:if="{{index==2}}">3月26日00:00:00后可以付尾款</view>
+								<view class="fb_cancel" wx:if="{{index==1||index==3}}" >{{index==1?"取消订单":index==3?"申请退款":""}}</view>
+								<view class="fb_confirm" wx:if="{{index==1||index==2||index==4||index==5}}">{{index==1?"立即付款":index==2?"付尾款":index==4?"确认收货":index==5?"评价":""}}</view>
+							</view>
+						</view>
+					</view>
+				</block>
+			</view>
+		</block>
+	</view>
+</view>

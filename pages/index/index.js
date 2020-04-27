@@ -12,7 +12,8 @@ Page({
     Carousel :[1,2,3],
     current : 1,
     recommend :["推荐商品","新鲜蔬菜","甜蜜瓜果","家禽肉类"],
-    currentTab : 0
+    currentTab : 0,
+    pact : false
   },
   onLoad: function (options) {
   },
@@ -77,8 +78,11 @@ Page({
       currentTab : e.target.dataset.index
     })
   },
-
-
+  pact_know(){
+    this.setData({
+      pact : true
+    })
+  },
   onShow: function () {
     // 页面出现在前台时执行
   },

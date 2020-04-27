@@ -1,0 +1,193 @@
+/* pages/myOrder/index.wxss */
+.my_order {
+  width: 100%;
+  height: auto;
+  background-color: #FAFAFC;
+}
+
+.mo_tab {
+  width: 100%;
+  height: 70rpx;
+  background-color: #ffffff;
+  padding-top: 30rpx;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1rpx solid #E5E5E5;
+}
+
+.mo_tab .nav_tab {
+  width: 25%;
+  height: 70rpx;
+  font-size: 28rpx;
+  color: #666666;
+  text-align: center;
+}
+
+.mo_tab .active {
+  font-size: 28rpx;
+  color: #65C179;
+}
+
+.mo_tab .nav_tabs_hr {
+  width: 80rpx;
+  height: 4rpx;
+  margin: 0 auto;
+  margin-top: 32rpx;
+  background: #65C179;
+}
+
+.tab_ctns {
+  width: 100%;
+  height: auto;
+}
+
+.tab_ctn {
+  width: 100%;
+  height: 100%;
+}
+
+.fruit {
+  width: 100%;
+  height: auto;
+  margin-top: 20rpx;
+  background-color: #ffffff;
+}
+
+.fruit .fruit_title {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.fruit .fruit_title .shop_img {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+}
+
+.fruit .fruit_title .shop_name {
+  width: 558rpx;
+  height: 80rpx;
+  text-align: left;
+  font-size: 30rpx;
+  font-family: PingFang;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+}
+
+.fruit .fruit_title .shop_status {
+  font-size: 28rpx;
+  font-family: PingFang;
+  font-weight: 500;
+  color: rgba(153, 153, 153, 1);
+}
+
+.fruit .fruit_content {
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.fc_right {
+  width: 570rpx;
+  height: 100%;
+}
+
+.fruit .fruit_content .fruit_img {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+}
+
+.fruit .fruit_content .fruit_name {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+}
+
+.fruit .fruit_content .fruit_num {
+  width: 100%;
+  text-align: right;
+  font-size: 24rpx;
+  font-family: PingFang;
+  font-weight: 500;
+  color: rgba(153, 153, 153, 1);
+}
+
+.fruit .fruit_content .fruit_price {
+  font-size: 32rpx;
+  font-family: PingFang;
+  font-weight: 500;
+  color: rgba(255, 168, 0, 1);
+  line-height: 48px;
+}
+
+.fruit .fruit_content .fruit_price text {
+  font-size: 24rpx;
+}
+
+.fruit .fruit_bot {
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+}
+
+.fb_total {
+  width: 200rpx;
+  height: 100%;
+  font-size: 24rpx;
+  color: rgba(255, 168, 0, 1);
+  margin-left: 16rpx;
+  line-height: 130rpx;
+}
+
+.fb_total text {
+  font-size: 38rpx;
+}
+
+.fb_right {
+  width: 534rpx;
+  height: 130rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fb_wk {
+  font-size: 24rpx;
+  color: rgba(153, 153, 153, 1);
+  line-height: 130rpx;
+  margin-right: 20rpx;
+}
+
+.fb_cancel {
+  width: 160rpx;
+  height: 60rpx;
+  background: rgba(255, 255, 255, 1);
+  border: 1rpx solid rgba(153, 153, 153, 1);
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: rgba(153, 153, 153, 1);
+  font-size: 28rpx;
+  margin-top: 40rpx;
+  margin-right: 20rpx;
+}
+
+.fb_confirm {
+  width: 160rpx;
+  height: 60rpx;
+  background: rgba(101, 193, 121, 1);
+  border-radius: 30rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 40rpx;
+  margin-right: 20rpx;
+}
