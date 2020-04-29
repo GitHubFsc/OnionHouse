@@ -1,2 +1,13 @@
 <!--pages/requestRefund/index.wxml-->
-<text>pages/requestRefund/index.wxml</text>
+<view class="requestRefund">
+  <view class="reasonRreturn"> 
+    <view>退款原因</view>
+    <image class="gengduo" src="./../icon/gengduo18.png"></image>
+  </view>
+  <view>
+  
+  </view>
+  <view>
+  
+  </view>
+</view>
